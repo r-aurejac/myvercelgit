@@ -38,5 +38,8 @@ $ ng new
 16. production, preview, development
 	L'intérêt d'avoir plusieurs environnement, c'est de pouvoir faire des tests sans casser l'application. On développe sur l'environnement de développement,
 	puis après on fait les tests sur preview pour ainsi "pousser" les modifications finales sur l'environnement de production disponible au clients.
+17.
 18. myvercelgit-2gt42dd9w.vercel.app
 19. Un pull request sert à faire merger 2 branches.
+20.
+21.
