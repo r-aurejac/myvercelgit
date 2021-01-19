@@ -29,7 +29,7 @@ $ ng new
 8. vercel logs https://myvercel-six.vercel.app
 9. inspect sert à recuperer des informations sur un déploiment ou sur les déploiment d'une production
 10. Les variables d'environnement servent à injecter des valeurs que l'on ne souhaite pas placer directement
- dans notre code source et de modifier son comportement en fonction de l'environnement dans lequel il s'exécute.
+	dans notre code source et de modifier son comportement en fonction de l'environnement dans lequel il s'exécute.
 11. vercel env add plain maVariable production
 12. vercel env ls 
 13. les variables secrètes sont cryptées et fournissent un moyen sûr de stocker et de partager des informations sensibles entre les déploiements.
@@ -41,5 +41,18 @@ $ ng new
 17.
 18. myvercelgit-2gt42dd9w.vercel.app
 19. Un pull request sert à faire merger 2 branches.
-20.
-21.
+20. Vercel vérifie la compatibilité du code.
+21. La branche main correspond à la production et l'autre branche créée au developpement.
+	Un pull request permet de fusionner deux branches tout en pouvant éliminer d'eventuel problème de compatibilité.
+	Workflow d'une feature permet la modification sur la branche dev (développement) dans le working tree, 
+	l'envoi (commit et push) des modification sur la branche dev du dépôt Git,
+	d'effectuer pull-request et merge de la branche dev du dépôt vers la branche master (production) du dépôt,
+	la récupération de la branche master de dépôt (pull) vers la branche master du working tree (la vraie application)
+22. L’architecture serverless est un modèle dans lequel le fournisseur de services cloud (AWS, Azure ou Google Cloud) 
+	est responsable de l’exécution d’un morceau de code en allouant de manière dynamique les ressources
+
+	L'interet du serverless :
+    -Pas besoin de maintenir les serveurs disponibles même lorsqu’il n’y a pas de requêtes à traiter.
+	-On est plus responsable de la disponibilité et de la maintenance des serveurs et de leurs ressources.
+    -On est plus responsables d’appliquer les patches de sécurité sur les serveurs.	
+    -On a plus besoin d'ajuster les serveurs avec la charge : augmenter lorsque la charge arrive et diminuer lorsque la charge redescend.
